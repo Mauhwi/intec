@@ -156,8 +156,9 @@ section.services {
 }
 
 /* ---------Reviews--------- */
+/* ---------Certificates--------- */
 
-section.reviews {
+section.reviews, section.certificates {
     background-color: #3E3E3D;
     color: #FFF;
     padding-top: 125px;
@@ -166,7 +167,7 @@ section.reviews {
     padding-bottom: 66px;
 }
  
-section.reviews>div:first-of-type {
+section.reviews>div:first-of-type, section.certificates>div:first-of-type {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -198,7 +199,8 @@ section.reviews>div:first-of-type {
     max-width: 30%; 
 }
 
-section.reviews .img-container {   
+section.reviews .img-container,     
+section.certificates .img-container {   
     position: absolute;
     transform: translate(100%, 0);
 }
