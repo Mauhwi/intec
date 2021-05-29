@@ -1,10 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-body, h1, p, ul, li {
+body, h1, h2, p, ul, li {
   margin: 0;
   padding: 0;
 }
 
+section h1 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+}
+
+/* ---------Header--------- */
 .content {
     width: 100%;
     max-width: 1920px;
@@ -16,11 +27,10 @@ header {
 }
 
 .header-content {
-    height: 500px;
-    width: 80%;
+    max-width: 90%;
     display: flex;
     align-items: center;
-    margin: auto;   
+    margin: auto;  
 }
 
 .header-filter {
@@ -28,10 +38,14 @@ header {
 }
 
 nav {
+    padding-top: 16px;
     display: flex;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    font-size: 0.875rem;
     color: #2D2D2D;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul {
@@ -44,15 +58,120 @@ nav li {
    padding: 10px;
 }
 
-.header-image-wrapper {
-    mix-blend-mode: darken;
-    width: 80%;
-    height: 100%;
-    background-image: url("./images/header.png");
+header .call>div>p {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-header h1 {
+header .call>p {
+    font-size: 0.75rem;
+    font-weight: normal;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    text-align: right;
+    padding-right: 1.1rem;
+}
+
+header .call>div {
+    display: flex;
+}
+
+.header-image-wrapper {
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: auto;
+}
+
+.header-content h1 {
     width: 30%;
     text-transform: uppercase; 
     color: #3E3E3D;
+    font-size: 2rem;
 }
+
+/* ---------Services--------- */
+
+section.services {
+    padding-top: 99px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 206px;
+}
+
+.service-card:nth-of-type(2n) {
+    flex-direction: row-reverse;
+}
+
+.service-card:first-of-type {
+    margin-top: 60px;
+}
+
+.service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 34px;
+    text-transform: uppercase;
+}
+
+.service-card {
+    display: flex;
+    margin-bottom: 100px;
+    max-width: 1096px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.service-card .card-content {
+    width: 53%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+}
+
+.service-card img {
+    width: 35%;
+    height: auto;
+    min-width: 280px;
+    padding-right: 12%;
+}
+
+.service-card:nth-of-type(2n) img {
+    padding-right: 0;
+    padding-left: 12%;
+}
+
+.service-card .card-button {
+    border: 1px solid #DC911B;
+    border-radius: 5px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 26px;
+    padding-right: 26px;
+    align-self: flex-end;
+    position: absolute;
+    transform: translate(0, 100%);
+    bottom: -38px;
+    right: 0;
+}
+
+/* ---------Reviews--------- */
+
+section.reviews {
+    background-color: #3E3E3D;
+    color: #FFF;
+    padding-top: 125px;
+    display: flex;
+    align-items: center;
+}
+ 
+section.reviews>div:first-of-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 60%;
+    flex: 60%;
+}
+
+
+
