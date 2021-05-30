@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Roboto:wght@400;700&display=swap");
 
 body,
 h1,
@@ -47,8 +47,8 @@ section h1 {
 }
 
 .button:hover {
-    background-color: #dc911b;
-    color: #fff;
+  background-color: #dc911b;
+  color: #fff;
 }
 
 /* ---------Header--------- */
@@ -401,18 +401,18 @@ section.contact {
 }
 
 .contact-card form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contact-card h2 {
-    text-transform: uppercase;
-    padding-bottom: 11px;
+  text-transform: uppercase;
+  padding-bottom: 11px;
 }
 
 .contact-card p {
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 section.contact > img:first-of-type {
@@ -440,7 +440,6 @@ section.contact > img:last-of-type {
   padding-left: 10px;
 }
 
-
 .contact-card form #tel {
   border: none;
   background-color: #ffe0b0;
@@ -453,28 +452,63 @@ section.contact > img:last-of-type {
 }
 
 .contact-card form input:focus {
-    outline: none;
+  outline: none;
 }
 
 .contact-card form #contact-form-submit {
-    position: relative;
-    transform: translate(0, 100%);
+  position: relative;
+  transform: translate(0, 100%);
 }
 
 /* ---------Articles--------- */
 
 section.articles {
- display: flex;
- flex-direction: column;
- align-items: center;
+  display: flex;
+  flex-direction: column;
+  max-width: 1171px;
+  margin: auto;
+  padding-bottom: 90px;
 }
 
 section.articles h1 {
-    align-self: flex-start;
+  align-self: stretch;
+  border-bottom: 1px solid #000;
+  margin-bottom: 90px;
 }
 
-section.articles>div:first-of-type {
-    display: flex;
+section.articles > div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+section.articles .article {
+  flex: 20%;
+  padding-left: 3%;
+}
 
+.article .date {
+  color: #C6C6C6;
+  margin-bottom: 10px;
+}
+
+.article p {
+  font-size: 0.75rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+.article p:first-of-type {
+font-size: 1rem;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.articles-button {
+    align-self: flex-end;
+    margin-top: 60px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
